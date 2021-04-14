@@ -6,9 +6,6 @@ var script = scripts[scripts.length - 1];
 var scriptURL = script.src;
 
 var searchParams = new URL(scriptURL).searchParams;
-console.log(searchParams.toString());
-console.log('-');
-console.log(searchParams.get('sadv'))
 if (advertisers.indexOf(searchParams.get('sadv')) == -1) {
 	//Inject DoubleVerify script
 	var dvtp_src = document.createElement('script');
